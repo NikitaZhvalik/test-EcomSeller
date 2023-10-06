@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    
+.title {
+    margin-bottom: 10px;
+
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+}
+    
+.text {
+    margin-bottom: 10px;
+
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.link {
+    width: 150px;
+    min-height: 35px;
+    margin-top: 20px;
+
+    background-color: #FFF;
+    font-size: 18px;
+    border-radius: 10px;
+
+    transition: all ease-in .2s;
+}
+
+.link:hover {
+    background-color: #ffc107;
+}
