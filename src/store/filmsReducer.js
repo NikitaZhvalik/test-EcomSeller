@@ -12,7 +12,7 @@ export const getFilms = createAsyncThunk(
     async ({query}, {rejectWithValue, dispatch}) => {
         try {
             dispatch(setLoading(true))
-            const server = `http://www.omdbapi.com/?s=${query ? query : ""}&type=movie&apikey=41a755ae&r=json`
+            const server = `https://www.omdbapi.com/?s=${query ? query : ""}&type=movie&apikey=41a755ae&r=json`
             const res = await axios.get(server)
             dispatch(setFilms(res?.data))
             dispatch(setLoading(false))
